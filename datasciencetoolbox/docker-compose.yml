@@ -1,0 +1,115 @@
+version: "3.8"
+services:
+  client:
+    stdin_open: true
+    image: neel9248/client
+    ports:
+      - "3000:3000"
+    volumes:
+      - "/Users/neeltrivedi/code/cs1660/final-project/DataScienceToolbox/datasciencetoolbox/node_modules"
+      - "./:/Users/neeltrivedi/code/cs1660/final-project/DataScienceToolbox/datasciencetoolbox"
+  gitapp:
+    stdin_open: true
+    image: neel9248/gitapp
+    ports:
+      - "3001:3000"
+  # spyderappnew:
+  #   stdin_open: true
+  #   image: 4e3dadc3963c
+  #   ports:
+  #     - "3002:3000"
+  jupyterapp:
+    stdin_open: true
+    image: neel9248/jupyterapp 
+    ports:
+      - "8888:8888"
+    environment: 
+      - PASSWORD=local-development
+  orangeapp:
+    stdin_open: true
+    image: neel9248/orangeapp
+    ports:
+      - "127.0.0.1:5901:5901"
+      - "127.0.0.1:6901:6901"
+  tensorflowapp:
+    stdin_open: true
+    image: neel9248/tensorflowapp
+    ports:
+      - "3005:3005"
+  rstudioapp:
+    stdin_open: true
+    image: neel9248/rstudioapp
+    ports:
+      - "8787:8787" 
+    environment: 
+      - PASSWORD=pass
+  vscodeapp:
+    stdin_open: true
+    image: neel9248/vscodeapp
+    ports:
+      - "8443:8443"
+    # volumes:
+    #   - "$(pwd)/data:/data"
+    #   - "$(pwd)/code:/code"
+  hadoopapp:
+    stdin_open: true
+    image: e58e72dbb7c5 
+    ports:
+      - "8042:8042"
+      - "8043:8043"
+      - "19888:19888"
+      - "50070:50070"
+      - "50075:50075"
+  sparkapp:
+    stdin_open: true
+    image: neel9248/sparkapp
+    environment: 
+      - SPARK_MODE=master
+  markdownapp:
+    stdin_open: true
+    image: neel9248/markdownapp
+    ports:
+      - "4000:4000"
+  tableauapp:
+    stdin_open: true
+    image: neel9248/tableauapp
+  sonarqubeapp:
+    stdin_open: true
+    image: neel9248/sonarqubeapp
+    ports:
+      - "9000:9000"
+      - "9092:9092"
+  # sonarscannerapp:
+  #   stdin_open: true
+  #   image: 2885105558a6
+  #   depends_on:
+  #     - sonarqubeapp
+  #   restart: on-failure
+  #   # command: >
+  #   #   /bin/bash "
+  #   #     sleep 50;"
+  #   environment: 
+  #     - SONAR_HOST_URL=http://host.docker.internal:9000
+  #   volumes: 
+  #     - "./:/Users/neeltrivedi/code/cs1660/final-project/DataScienceToolbox/datasciencetoolbox/sonarscanner"
+    # deploy:
+    #   restart_policy:
+    #       condition: on-failure
+    #       delay: 20s
+    #       max_attempts: 5
+    #       window: 120s
+# networks:
+#   sonar:
+#     external:
+#       name: sonar
+
+
+      
+
+
+  
+
+    
+  
+    
+  

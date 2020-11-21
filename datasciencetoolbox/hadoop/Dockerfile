@@ -1,0 +1,5 @@
+
+FROM harisekhon/hadoop
+
+COPY . ./
+
