@@ -2,7 +2,7 @@ version: "3.8"
 services:
   client:
     stdin_open: true
-    image: neel9248/client
+    image: neel9248/toolbox:client
     ports:
       - "3000:3000"
     volumes:
@@ -10,7 +10,7 @@ services:
       - "./:/Users/neeltrivedi/code/cs1660/final-project/DataScienceToolbox/datasciencetoolbox"
   gitapp:
     stdin_open: true
-    image: neel9248/gitapp
+    image: neel9248/toolbox:gitapp
     ports:
       - "3001:3000"
   # spyderappnew:
@@ -20,32 +20,32 @@ services:
   #     - "3002:3000"
   jupyterapp:
     stdin_open: true
-    image: neel9248/jupyterapp 
+    image: neel9248/toolbox:jupyterapp 
     ports:
       - "8888:8888"
     environment: 
       - PASSWORD=local-development
   orangeapp:
     stdin_open: true
-    image: neel9248/orangeapp
+    image: neel9248/toolbox:orangeapp
     ports:
       - "127.0.0.1:5901:5901"
       - "127.0.0.1:6901:6901"
   tensorflowapp:
     stdin_open: true
-    image: neel9248/tensorflowapp
+    image: neel9248/toolbox:tensorflowapp
     ports:
       - "3005:3005"
   rstudioapp:
     stdin_open: true
-    image: neel9248/rstudioapp
+    image: neel9248/toolbox:rstudioapp
     ports:
       - "8787:8787" 
     environment: 
       - PASSWORD=pass
   vscodeapp:
     stdin_open: true
-    image: neel9248/vscodeapp
+    image: neel9248/toolbox:vscodeapp
     ports:
       - "8443:8443"
     # volumes:
@@ -53,7 +53,7 @@ services:
     #   - "$(pwd)/code:/code"
   hadoopapp:
     stdin_open: true
-    image: e58e72dbb7c5 
+    image: neel9248/toolbox:hadoopapp 
     ports:
       - "8042:8042"
       - "8043:8043"
@@ -62,20 +62,20 @@ services:
       - "50075:50075"
   sparkapp:
     stdin_open: true
-    image: neel9248/sparkapp
+    image: neel9248/toolbox:sparkapp
     environment: 
       - SPARK_MODE=master
   markdownapp:
     stdin_open: true
-    image: neel9248/markdownapp
+    image: neel9248/toolbox:markdownapp
     ports:
       - "4000:4000"
   tableauapp:
     stdin_open: true
-    image: neel9248/tableauapp
+    image: neel9248/toolbox:tableauapp
   sonarqubeapp:
     stdin_open: true
-    image: neel9248/sonarqubeapp
+    image: neel9248/toolbox:sonarqubeapp
     ports:
       - "9000:9000"
       - "9092:9092"
