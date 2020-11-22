@@ -9,7 +9,7 @@ Make sure you run "docker system prune" in order to remove all unused containers
 Please now execute the command "docker-compose up". This will pull all the service images from dockerhub and run the application. The docker hub repository is 
 https://hub.docker.com/repository/docker/neel9248/toolbox.
 
-Once running (may take a few minutes) navigate to http://localhost:3000 in order to access applications. 
+Once running (may take a 15-20 minutes depending on computer) navigate to http://localhost:3000 in order to access applications. 
 
 Orange - click the link and type in the password "orange"
 
@@ -34,6 +34,11 @@ Tableau - run "docker exec -it datasciencetoolbox_tableauapp_1 bash" in terminal
 Hadoop - run "docker exec -it datasciencetoolbox_hadoopapp_1 bash" in terminal
 
 Spark - run "docker exec -it datasciencetoolbox_sparkapp_1 bash" in terminal
+
+I borrowed-lines/used dockerfiles on github repositories to build some images. I'm putting them here for reference since it won't be evident in the code:
+
+SonarScanner - https://github.com/kmlvision/python-sonar-scanner/blob/master/Dockerfile
+VScode and Jupyter - https://github.com/caesarnine/data-science-docker-vscode-template
 
 
 
