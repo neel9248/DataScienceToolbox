@@ -12,7 +12,7 @@ function App() {
         <li><a href="http://localhost:6080/vnc.html">VScode</a></li>
         <li><a href="http://localhost:8888">Jupyter Lab</a></li>
         <li><a href="https://www.pdesas.org/Profile/Account/Login">IBM SAS</a></li>
-        <li><a href="http://localhost:8888">SonarQube/Scanner</a></li>
+        <li><a href="http://localhost:9000">SonarQube/Scanner</a></li>
         <li><a href="http://localhost:12345">Markdown</a></li>
         <li>Tensorflow: run "docker exec -it datasciencetoolbox_tensorflowapp_1 bash" in terminal</li>
         <li>Git: run "docker exec -it datasciencetoolbox_gitapp_1 /bin/sh" in terminal</li>

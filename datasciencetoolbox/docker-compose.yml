@@ -30,6 +30,8 @@ services:
     ports:
       - "127.0.0.1:5801:5801"
       - "127.0.0.1:6901:6901"
+    environment: 
+      - VNC_PASSWD=orange
   tensorflowapp:
     stdin_open: true
     image: neel9248/toolbox:tensorflowapp
@@ -46,12 +48,7 @@ services:
     stdin_open: true
     image: neel9248/toolbox:vscodeapp
     ports:
-      - "6080:6080"
-      - "5901:5901"
-    environment: 
-      - PASSWORD=123456
-      - WIDTH=1920
-      - HEIGHT=1080
+      - "1000:8080"
     # volumes:
     #   - "$(pwd)/data:/data"
     #   - "$(pwd)/code:/code"
