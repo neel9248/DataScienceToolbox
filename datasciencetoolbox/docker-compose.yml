@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      # - "/Users/neeltrivedi/code/cs1660/final-project/DataScienceToolbox/datasciencetoolbox/node_modules"
+      - "/DataScienceToolbox/datasciencetoolbox/node_modules"
       - ".:/DataScienceToolbox/datasciencetoolbox"
   gitapp:
     stdin_open: true
