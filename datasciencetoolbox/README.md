@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React App (NOT THE CS1660 README.md please navigate back one directory to run datasciencetoolbox)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
