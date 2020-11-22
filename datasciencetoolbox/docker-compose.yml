@@ -31,7 +31,7 @@ services:
       - "127.0.0.1:5801:5801"
       - "127.0.0.1:6901:6901"
     environment: 
-      - VNC_PASSWD=orange
+      - password=orange
   tensorflowapp:
     stdin_open: true
     image: neel9248/toolbox:tensorflowapp
@@ -43,7 +43,7 @@ services:
     ports:
       - "8787:8787" 
     environment: 
-      - PASSWORD=pass
+      - DISABLE_AUTH=true
   vscodeapp:
     stdin_open: true
     image: neel9248/toolbox:vscodeapp
