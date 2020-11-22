@@ -11,7 +11,9 @@ https://hub.docker.com/repository/docker/neel9248/toolbox.
 
 Once running (may take a 15-20 minutes depending on computer) navigate to http://localhost:3000 in order to access applications. 
 
-#BELOW ARE THE METHODS TO ACCESS THE APPLICATIONS (I have the passwords for necessary applications listed, but you shouldn't have to input any of them):
+
+
+BELOW ARE THE METHODS TO ACCESS THE APPLICATIONS (I have the passwords for necessary applications listed, but you shouldn't have to input any of them):
 
 Orange - click the link, if you password is prompted (it should not be) type in "orange"
 
