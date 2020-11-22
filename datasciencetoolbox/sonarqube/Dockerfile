@@ -27,4 +27,15 @@ FROM sonarqube
 # ENTRYPOINT ["sonar-scanner"] 
 # CMD ["-Dsonar.projectBaseDir=/usr/src"]
 
+RUN apk add curl unzip
+# install sonar scanner
+ENV SONAR_HOME "/opt/sonar-scanner"
+RUN curl --insecure -OL https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.0.0.1744-linux.zip && \
+    mkdir -p ${SONAR_HOME} && \
+    unzip -d /tmp/sonar-scanner sonar-scanner-cli-4.0.0.1744-linux.zip && \
+    mv /tmp/sonar-scanner/sonar-scanner-4.0.0.1744-linux/* ${SONAR_HOME} && \
+    rm -rf /tmp/sonar*
+
+ENV PATH ${SONAR_HOME}/bin:$PATH
+
 COPY . ./

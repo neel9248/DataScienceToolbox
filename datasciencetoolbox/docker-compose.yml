@@ -10,9 +10,8 @@ services:
       - ".:/DataScienceToolbox/datasciencetoolbox"
   gitapp:
     stdin_open: true
-    image: neel9248/toolbox:gitapp
-    ports:
-      - "3001:3000"
+    image: neel9248/toolbox:gitapp 
+    #   - "5901:5901"
   # spyderappnew:
   #   stdin_open: true
   #   image: 4e3dadc3963c
@@ -29,7 +28,7 @@ services:
     stdin_open: true
     image: neel9248/toolbox:orangeapp
     ports:
-      - "127.0.0.1:5901:5901"
+      - "127.0.0.1:5801:5801"
       - "127.0.0.1:6901:6901"
   tensorflowapp:
     stdin_open: true
@@ -47,7 +46,12 @@ services:
     stdin_open: true
     image: neel9248/toolbox:vscodeapp
     ports:
-      - "8443:8443"
+      - "6080:6080"
+      - "5901:5901"
+    environment: 
+      - PASSWORD=123456
+      - WIDTH=1920
+      - HEIGHT=1080
     # volumes:
     #   - "$(pwd)/data:/data"
     #   - "$(pwd)/code:/code"
@@ -69,7 +73,7 @@ services:
     stdin_open: true
     image: neel9248/toolbox:markdownapp
     ports:
-      - "4000:4000"
+      - "12345:80"
   tableauapp:
     stdin_open: true
     image: neel9248/toolbox:tableauapp
