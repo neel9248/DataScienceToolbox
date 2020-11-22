@@ -10,7 +10,7 @@ function App() {
         <li><a href="http://localhost:6901/?password=orange">Orange</a></li>
         <li><a href="http://localhost:8787">Rstudio</a></li>
         <li><a href="http://localhost:1000">VScode</a></li>
-        <li><a href="http://localhost:8888/lab?">Jupyter Lab</a></li>
+        <li><a href="http://localhost:8888/?token=local-development">Jupyter Lab</a></li>
         <li><a href="https://www.pdesas.org/Profile/Account/Login">IBM SAS</a></li>
         <li><a href="http://localhost:9000">SonarQube/Scanner</a></li>
         <li><a href="http://localhost:12345">Markdown</a></li>

@@ -22,8 +22,6 @@ services:
     image: neel9248/toolbox:jupyterapp 
     ports:
       - "8888:8888"
-    environment: 
-      - PASSWORD=local-development
   orangeapp:
     stdin_open: true
     image: neel9248/toolbox:orangeapp
