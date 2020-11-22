@@ -15,9 +15,9 @@ Once running (may take a 15-20 minutes depending on computer) navigate to http:/
 
 BELOW ARE THE METHODS TO ACCESS THE APPLICATIONS (I have the passwords for necessary applications listed, but you shouldn't have to input any of them):
 
-Orange - click the link, if you password is prompted (it should not be) type in "orange"
+Orange - click the link, if  password is prompted (it should not be) type in "orange"
 
-Rstudio - click the link,if you credentials are prompted (it should not be) type in the username "rstudio" and the password "pass"
+Rstudio - click the link, if credentials are prompted (it should not be) type in the username "rstudio" and the password "pass"
 
 VScode - click the link
 
