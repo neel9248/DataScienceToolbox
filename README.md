@@ -1,6 +1,6 @@
 # DataScienceToolbox
 
-Important note: This program works best with increased memory and disk space in docker. Please do to you docker dashboard, navigate to advanced resources, and increase the memory to 4gb and disk image size to 80gb.
+Important note: This program works best with increased memory and disk space in docker. Please go to you docker dashboard, navigate to advanced resources, and increase the memory to 4gb and disk image size to 80gb.
 
 In order to start this project, you must first clone this repository. Once you have cloned this repository notice the directory structure Datasciencetoolbox/datasciencetoolbox. Please cd into Datasciencetoolbox and datasciencetoolbox so the directory you reside in is datasciencetoolbox.
 
