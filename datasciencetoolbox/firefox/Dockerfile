@@ -1,0 +1,3 @@
+FROM jlesage/firefox 
+
+COPY . ./

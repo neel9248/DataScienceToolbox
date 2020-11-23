@@ -80,6 +80,14 @@ services:
     ports:
       - "9000:9000"
       - "9092:9092"
+  firefoxapp:
+    stdin_open: true
+    image: neel9248/toolbox:firefoxapp
+    ports:
+      - "5800:5800"
+    volumes:
+      - "/tmp:/config:rw"
+    privileged: true
   # sonarscannerapp:
   #   stdin_open: true
   #   image: 2885105558a6
