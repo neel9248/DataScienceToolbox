@@ -31,7 +31,9 @@ Markdown - click the link to access markdown
 
 Tensorflow - run "docker exec -it datasciencetoolbox_tensorflowapp_1 bash" in terminal
 
-Git - run "docker exec -it datasciencetoolbox_gitapp_1 /bin/sh" in terminal
+Firefox - click the link to access firefox
+
+Git - click the link, navigate to applications on the vnc viewer, and select "Terminal Emulator". If password is prompted (it should not be) type in "git"
 
 Tableau - run "docker exec -it datasciencetoolbox_tableauapp_1 bash" in terminal
 
