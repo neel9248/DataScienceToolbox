@@ -1,6 +1,6 @@
 # DataScienceToolbox
 
-Important note: This program works best with increased memory and disk space in docker. Please go to you docker dashboard, navigate to advanced resources, and increase the memory to 4gb and disk image size to 80gb.
+Important note: This program works best with increased memory and disk space in docker. Please go to your docker dashboard, navigate to advanced resources, and increase the memory to 4gb and disk image size to 80gb.
 
 In order to start this project, you must first clone this repository. Once you have cloned this repository notice the directory structure Datasciencetoolbox/datasciencetoolbox. Please cd into Datasciencetoolbox and datasciencetoolbox so the directory you reside in is datasciencetoolbox.
 
@@ -15,7 +15,7 @@ Once running (may take a 15-20 minutes depending on computer) navigate to http:/
 
 BELOW ARE THE METHODS TO ACCESS THE APPLICATIONS (I have the passwords for necessary applications listed, but you shouldn't have to input any of them):
 
-Orange - click the link, if  password is prompted (it should not be) type in "orange"
+Orange - click the link, if password is prompted (it should not be) type in "orange"
 
 Rstudio - click the link, if credentials are prompted (it should not be) type in the username "rstudio" and the password "pass"
 
