@@ -10,8 +10,10 @@ services:
       - ".:/DataScienceToolbox/datasciencetoolbox"
   gitapp:
     stdin_open: true
-    image: neel9248/toolbox:gitapp 
-    #   - "5901:5901"
+    image: gitvnc 
+    ports:
+      - "9901:6901"
+      - "5901:5901"
   # spyderappnew:
   #   stdin_open: true
   #   image: 4e3dadc3963c
