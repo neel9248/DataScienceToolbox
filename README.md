@@ -47,6 +47,9 @@ SonarScanner - https://github.com/kmlvision/python-sonar-scanner/blob/master/Doc
 
 VScode and Jupyter - https://github.com/caesarnine/data-science-docker-vscode-template
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEMO AND CODE WALKTHROUGH: https://drive.google.com/file/d/1j-MvOyVR0jW49F1axBuS2RgvaqZTnIeZ/view
+
 
 
 
