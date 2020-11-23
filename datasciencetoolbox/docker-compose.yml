@@ -10,7 +10,7 @@ services:
       - ".:/DataScienceToolbox/datasciencetoolbox"
   gitapp:
     stdin_open: true
-    image: gitvnc 
+    image: neel9248/toolbox:gitapp
     ports:
       - "9901:6901"
       - "5901:5901"
